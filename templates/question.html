@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/questions.css">
+    <title>Questions</title>
+</head>
+<body>
+    <div class = "wrapper">
+
+    <form action="{{ url_for('question') }}" method="POST" {%for question in json_objects%}>
+        <h1>Test</h1>
+        <h2>Difficulty: {{question.difficulty}}</h2>
+        <h2>Category</h2>
+        <h2>Question:</h2>
+
+        <input type = "radio" name="option" id="Option1" value = "TRUE">
+        <label for="Option1">True</label>
+        
+
+        <input type = "radio" name="option" id="Option2" value = "FALSE">
+        <label for="Option2">False</label>
+
+        <button type="button">Submit</button>
+    </form>
+    </div>
+</body>
+</html>

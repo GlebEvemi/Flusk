@@ -1,0 +1,22 @@
+.wrapper{
+    margin: 0 auto;
+    border: 1px solid black;
+    height: 800px;
+    width: 900px;
+}
+h1{
+    text-align: center;
+    width: 100%;
+    float:left;
+}
+h2{
+    float: left;
+    width: 100%;
+}
+
+button{
+    float:left;
+    position: relative;
+    width:100%;
+    color:rgb(250, 2, 2);
+}
